@@ -29,6 +29,12 @@ class App extends React.Component {
                 <img className={styles.image} src={coronaImage} alt="covid19" />
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
+                <div onChange="">
+                    <input defaultChecked type="radio" value="" /> Line Chart
+                    <input type="radio" value="" /> Bar Chart
+                    <input type="radio" value="" /> Pie Chart
+                    <input type="radio" value="" /> Table
+                </div>
                 <Chart data={data} country={country} />
             </div>
         )
